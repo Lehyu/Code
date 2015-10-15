@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style/search.css">
+    <meta charset="UTF-8">
+    <script src="js/date.js"></script>
+    <title>Chapter3</title>
+  </head>
+  <body>
+    <h1>Chapter3.1</h1>
+    <form>
+      <p><label>Search <input type="search" name="query"></label></p>
+      <p><button type="submit">Submit</button></p>
+    </form>
+    <h1>Chapter3.2</h1>
+    <form>
+     <fieldset>
+        <legend>Contact Information</legend>
+        <p><label>E-mail address <input type="email" name="email"></label></p>
+        <p><label>Web site <input type="url" name="website" title="That doesn't look like a valid web
+address."></label></p>
+        <p><label>Telephone number <input type="tel" name="phone"></label></p>
+      </fieldset>
+      <p><button type="submit">Submit</button></p>
+    </form>
+
+    <h1>Chapter3.3</h1>
+    <form>
+      <label>Date and Time<input type="datetime" name="dataAndTime" id="dob"></label>
+      <fieldset>
+        <legend>Appointment Request</legend>
+        <p><label>Date <input type="date" name="date" min="2011-03-15"
+                              max="2012-03-14"></label></p>
+        <p><label>Time <input type="time" name="time" min="08:00"
+                              max="18:00"></label></p>
+      </fieldset>
+    </form>
+
+    <h1>Chapter3.4</h1>
+    <form>
+      <p><label>Quantity <input type="number" name="quantity"></label></p>
+    </form>
+
+    <h1>Chapter3.5</h1>
+    <form>
+      <p><label>Volume <input type="range" name="volume"
+                              min="0" max="10" step=".5" value="5"></label></p>
+    </form>
+
+    <h1>Chapter3.6</h1>
+      <p><label>Background color <input type="color" name="bg"></label></p>
+    <p><label>Foreground color <input type="color" name="fg"></label></p>
+
+    <h1>Chapter3.7</h1>
+    <form>
+      <p><label>Donation amount </label>
+      <datalist id="donations">
+        <select name="donation">
+          <option></option>
+          <option value="10.00">10.00</option>
+          <option value="25.00">25.00</option>
+          <option value="50.00">50.00</option>
+          <option>Ohter</option>
+        </select>
+        If other, please specify:
+      </datalist>
+      <input type="text" id="donation" name="donations" list="donations"></p>
+    </form>
+
+    <h1>Chapter3.8</h1>
+    <form>
+      <fieldset>
+        <legend>Login</legend>
+        <p><label>Username <input type="text" name="username" required></label></p>
+        <p><label>Password <input type="text" name="pwd" required></label></p>
+      </fieldset>
+    </form>
+    <p><button type="submit">Submit</button></p>
+
+    <h1>Chapter3.10</h1>
+    <form>
+<fieldset>
+<legend>Contact Information</legend>
+<p><label>E-mail address <input type="email" name="email"
+placeholder="user@domain.com"></label></p>
+<p><label>Web site <input type="url" name="website"
+placeholder="http://www.domain.com/"></label></p>
+<p><label>Telephone number <input type="tel" name="phone"
+placeholder="123-123-1234"></label></p>
+</fieldset>
+<p><button type="submit">Submit</button></p>
+    </form>
+    <h1>Chapter3.11</h1>
+    <form>
+<fieldset>
+<legend>Login</legend>
+<p><label>Username <input type="text" name="username"></label></p>
+<p><label>Password <input type="password" name="pwd"
+autocomplete="off"></label></p>
+</fieldset>
+<p><button type="submit">Submit</button></p>
+    </form>
+    <h1>Chapter3.12</h1>
+    <form>
+      <p><label>Telephone number
+          <input type="tel" name="phone"
+                 pattern="[2-9][0-9]{2}-[0-9]{3}-[0-9]{4}"
+                 title="North American format: XXX-XXX-XXXX">
+      </label></p>
+      <p><button type="submit">Submit</button></p>
+    </form>
+    <h1>Chapter3.13</h1>
+    <form>
+      <p><label>Search
+          <input type="search" name="query" id="query"
+                 autofocus></label></p>
+      <p><button type="submit">Submit</button></p>
+    </form>
+    <form id="search">
+      <p><label>Search
+          <input type="search" name="query" id="query" value=""
+                 placeholder="Enter query"></label></p>
+      <p><button type="submit">Submit</button></p>
+    </form>
+<h1>Appointment Scheduler</h1>
+<form>
+<fieldset>
+<legend>Personal Information</legend>
+<p><label>Name <input type="text" name="name" required></label></p>
+<p><label>Telephone number <input type="tel" name="phone" required
+pattern="[2-9][0-9]{2}-[0-9]{3}-[0-9]{4}" title="North American format:
+XXX-XXX-XXXX"></label></p>
+<p><label>E-mail address <input type="email" name="email"></label></p>
+<p><label>Date of birth <input type="date" name="dob"></label></p>
+</fieldset>
+<fieldset>
+<legend>Appointment Request</legend>
+<p><label for="reason">What is the reason for your visit?</label>
+<datalist id="reasons">
+<select name="reason">
+<option>Annual physical</option>
+<option>Cold or flu symptoms</option>
+<option>Blood test</option>
+<option>Post-operative</option>
+<option>Other</option>
+</select>
+If other, please specify:
+</datalist>
+<input id="reason" name="reason" list="reasons"></p>
+<p><label>Current pain level <input type="range" name="pain" min="0"
+max="10" step=".5" value="5" title="0 is no pain, 10 is worst pain
+imaginable"></label></p>
+<p><label>Preferred date <input type="date" name="date" required
+min="2011-03-15" max="2012-03-14"></label></p>
+<p><label>Preferred time <input type="time" name="time" required
+min="08:00" max="18:00" step="1:00"></label></p>
+</fieldset><p><button type="submit">Submit</button></p>
+</form>
+  </body>
+</html>
