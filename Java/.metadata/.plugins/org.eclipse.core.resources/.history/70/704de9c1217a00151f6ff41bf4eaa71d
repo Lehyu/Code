@@ -1,0 +1,34 @@
+package com.tool;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+
+import com.model.Point;
+
+public class fileTool {
+	private BufferedReader reader;
+	//private InputStream stream;
+    private String filename;
+
+    public fileTool(String name){
+        filename = name;
+        try{
+            //stream = new FileInputStream(new File(filename));
+            reader = new BufferedReader(new FileReader(filename));
+        }catch(Exception e){
+
+        }
+    }
+    
+    public Point[] readFile() throws IOException{
+    	String str = reader.readLine();
+    	str.split("n=");
+    	
+		return null;
+    	
+    }
+}

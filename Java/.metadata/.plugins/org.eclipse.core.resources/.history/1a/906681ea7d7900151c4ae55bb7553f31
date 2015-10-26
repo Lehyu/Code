@@ -1,0 +1,23 @@
+package entry;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import io.xlsTool;
+import jxl.read.biff.BiffException;
+import model.Graph;;
+
+public class Entry {
+	public static void main(String[] args){
+		String filename = "/home/lhy/Book/ComplexNetwork/data.xls";
+		try {
+			xlsTool tool = new xlsTool(filename);
+			String[][] data = tool.readSheet(1);
+			Graph graph = new Graph(data);
+		} catch (BiffException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

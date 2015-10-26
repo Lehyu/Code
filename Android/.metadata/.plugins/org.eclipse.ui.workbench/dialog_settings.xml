@@ -21,10 +21,16 @@
 		<list key="textArray">
 		</list>
 	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.wst.xml.ui.internal.wizards.NewXMLWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.XMLCategory"/>
+		</list>
+	</section>
 	<section name="InstallationDialogSettings">
-		<item value="820" key="DIALOG_WIDTH"/>
-		<item value="1|文泉驿正黑|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="733" key="DIALOG_HEIGHT"/>
+		<item value="708" key="DIALOG_WIDTH"/>
+		<item value="1|WenQuanYi Zen Hei|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="734" key="DIALOG_HEIGHT"/>
 		<item value="276" key="DIALOG_X_ORIGIN"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
 	</section>

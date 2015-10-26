@@ -1,0 +1,24 @@
+package entry;
+
+import java.util.HashMap;
+
+public class Entry {
+	public static void main(String[] args){
+		HashMap<Integer, String> map = new HashMap();
+		for(int i = 0; i < 10; i++){
+			map.put(i, " "+i);
+		}
+		
+		while(!map.isEmpty()){
+			for(int i = 0; i < map.size(); i++){
+				if(Integer.parseInt(map.get(i).trim())% 2 == 0)
+					map.remove(i);
+			}
+		}
+		
+		
+		map.remove(5);
+		
+		System.out.println(map.size());
+	}
+}

@@ -1,0 +1,29 @@
+package com.entry;
+
+import java.io.IOException;
+import java.util.HashMap;
+
+import com.Algorithm.Bayesian;
+import com.tool.FileIOTool;
+
+public class DMPro {
+	private static final String filename = "/home/lhy/Code/Java/DMPro/data/data2.txt";
+	public static void main(String[] args){
+		FileIOTool tool = new FileIOTool(filename);
+		try {
+			String[][] data = tool.read();
+			Bayesian bay = new Bayesian(data, data[0].length-1,true);
+			
+			String condition = "outlook = sunny,tempperature>70,humidity>80,windy=FALSE";
+//	    	String str = "20|80";
+//	    
+//	    	String[] tmp = str.split("\\|");
+//	    	for(int i = 0; i < tmp.length; i++)
+//	    		System.out.println(tmp[i]);
+	    	
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

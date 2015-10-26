@@ -1,0 +1,8 @@
+package com.entry;
+
+public class Triangulation {
+	public static void main(String[] args){
+		String str = "  n= 30";
+		System.out.println(str.replace("n=", "").trim());
+	}
+}

@@ -1,0 +1,20 @@
+package entry;
+
+import java.util.ArrayList;
+
+public class Entry {
+	public static void main(String[] args){
+		ArrayList<String> list = new ArrayList<String>();
+		
+		for(int i = 0; i < 100; i++)
+			list.add(" "+i);
+		
+		System.out.println(list.size());
+		for(String str: list)
+			if(Integer.parseInt(str.trim()) %2 == 0)
+				list.remove(Integer.parseInt(str.trim()));
+		
+		
+		System.out.println(list.size());
+	}
+}

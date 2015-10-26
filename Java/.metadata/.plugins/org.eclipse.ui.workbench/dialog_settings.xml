@@ -21,4 +21,25 @@
 		<list key="textArray">
 		</list>
 	</section>
+	<section name="InstallationDialogSettings">
+		<item value="708" key="DIALOG_WIDTH"/>
+		<item value="1|WenQuanYi Zen Hei|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="734" key="DIALOG_HEIGHT"/>
+		<item value="332" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
+		<item value="0" key="sort"/>
+		<item value="false" key="allPersp"/>
+		<list key="columns">
+			<item value="445"/>
+			<item value="891"/>
+		</list>
+		<list key="bounds">
+			<item value="0"/>
+			<item value="34"/>
+			<item value="1364"/>
+			<item value="734"/>
+		</list>
+	</section>
 </section>

@@ -1,0 +1,14 @@
+package model;
+
+import java.util.Comparator;
+
+/**
+ * Created by lhy on 10/23/15.
+ */
+public class BagComparetorBySize<Item> implements Comparator<Bag<Item>>{
+    @SuppressWarnings("unchecked")
+	@Override
+    public int compare(Object lhs, Object rhs) {
+        return ((Bag<Item>)lhs).size() > ((Bag<Item>)rhs).size() ? 1: 0;
+    }
+}

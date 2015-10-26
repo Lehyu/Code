@@ -1,0 +1,9 @@
+package model;
+
+public class data{
+    private int attri_num;
+    
+    public data(int attri_num){
+    	this.attri_num = attri_num;
+    }
+}

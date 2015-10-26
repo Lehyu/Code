@@ -1,0 +1,58 @@
+package com.tool;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import com.Algorithm.Bayesian;
+
+public class FileIOTool {
+	private BufferedReader stream;
+	//private InputStream stream;
+    private String filename;
+
+    public FileIOTool(String name){
+        filename = name;
+        try{
+            //stream = new FileInputStream(new File(filename));
+            stream = new BufferedReader(new FileReader(filename));
+        }catch(Exception e){
+
+        }
+    }
+    
+    public ArrayList<String[]> readA() throws IOException{
+    	ArrayList<String[]> data = new ArrayList<String[]>();
+    	String line = null;
+    	while((line = stream.readLine()) != null){
+    		String[] record = line.split("\\s+");
+    		
+    	}
+    }
+    
+    private String[] str2array(String str){
+    	String[] record = str.split("\\s+");
+		for(int i = 0; i < record.length; i++)
+			record[i] = record[i].trim();
+		return record;
+    }
+    public String[][] read() throws IOException{
+    	ArrayList<String[]> data = new ArrayList();
+    	String line = null;
+    	line = stream.readLine();
+    	System.out.println(line);
+    	while(line != null){
+    		
+    		data.add(str2array(line));
+    		line = stream.readLine();
+    	}
+    	String[][] records = new String[data.size()][data.get(0).length];
+    	for(int i = 0; i < records.length; i++){
+    		records[i] = data.get(i);
+    	}
+    	
+    	return records;
+    }
+}
