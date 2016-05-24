@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options">
+        <item>音频模式</item>
+        <item>蓝牙模式</item>
+    </string-array>
+</resources>

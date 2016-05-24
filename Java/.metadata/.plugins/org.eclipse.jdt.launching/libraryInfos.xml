@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<libraryInfo home="D:\Envir\Java\jre1.8.0_65" version="1.8.0_65">
+<bootpath>
+<entry path="D:\Envir\Java\jre1.8.0_65\lib\resources.jar"/>
+<entry path="D:\Envir\Java\jre1.8.0_65\lib\rt.jar"/>
+<entry path="D:\Envir\Java\jre1.8.0_65\lib\sunrsasign.jar"/>
+<entry path="D:\Envir\Java\jre1.8.0_65\lib\jsse.jar"/>
+<entry path="D:\Envir\Java\jre1.8.0_65\lib\jce.jar"/>
+<entry path="D:\Envir\Java\jre1.8.0_65\lib\charsets.jar"/>
+<entry path="D:\Envir\Java\jre1.8.0_65\lib\jfr.jar"/>
+<entry path="D:\Envir\Java\jre1.8.0_65\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\Envir\Java\jre1.8.0_65\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\Envir\Java\jre1.8.0_65\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="/usr/lib/jvm/java-8-openjdk" version="1.8.0_60">
 <bootpath>
 <entry path="/usr/lib/jvm/java-8-openjdk/jre/lib/resources.jar"/>

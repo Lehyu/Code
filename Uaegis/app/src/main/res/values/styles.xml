@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="f_update_progress_label">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    <style name="f_update_state_label">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    <style name="c_navigation_bar">
+        <item name="android:background">@mipmap/navigation_blue_bg</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+    <style name="c_navigation_container">
+        <item name="android:background">@drawable/bg_transparent</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+    <style name="c_bottom_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/c_bottom_menu_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/c_bottom_menu_slide_down</item>
+    </style>
+    <style name="main_btn_item">
+        <item name="android:textColor">@drawable/main_btn_item_color_selector</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/round_button_bg</item>
+        <item name="android:padding">8.0dip</item>
+        <item name="android:minHeight">32.0dip</item>
+        <item name="android:drawableRight">@mipmap/ic_right_arrow</item>
+    </style>
+</resources>

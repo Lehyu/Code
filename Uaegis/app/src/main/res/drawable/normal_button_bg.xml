@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="#a0338cd9" android:endColor="#a9338cd9" android:angle="-90.0" android:centerY="0.5" android:centerColor="#ff338cd9" />
+    <corners android:radius="6.0dip" />
+    <stroke android:width="2.0px" android:color="@color/disable_btn" />
+</shape>

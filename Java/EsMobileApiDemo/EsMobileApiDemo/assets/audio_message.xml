@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<SignData>
+    <TradeType  name="行内转账" >innerTransfer</TradeType>
+    <Timestamp>12345</Timestamp>
+    <Fields>
+        <PayerAcNo name="转出账户：">6222030200000384</PayerAcNo>
+        <PayeeAcNo name="转入账户：">6227881000987</PayeeAcNo>
+        <Amount name="金额：">1000.5</Amount>
+        <TranDate name="时间：" >2009-12-06</TranDate>
+		<JnlNo>xxxxxxx</JnlNo>
+	</Fields>
+</SignData>
